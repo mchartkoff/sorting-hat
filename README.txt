@@ -1,0 +1,1 @@
+This sorting hat application was created for my daughter's virtual birthday party. It randomly picks between Gryffindor, Ravenclaw and Hufflepuff. This was geared for younger kids that didn't want to be in Slytherin so it was left out.
