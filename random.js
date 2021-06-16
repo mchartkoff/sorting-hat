@@ -1,31 +1,13 @@
-var windowWidth = document.getElementsByTagName("body")[0].clientWidth;
-//console.log(windowWidth);
 const sounds = ["gryffindor.mp4","hufflepuff.mp4","ravenclaw.mp4"];
 var wand = document.getElementById("wand");
 var mouth = document.getElementById("mouth");
-if(windowWidth < 500){
-/*	wand.addEventListener("touchstart",function(e){
-		e.preventDefault;
-		this.style.backgroundImage="url(images/wandDown.png)";
-	/*var random = Math.floor(Math.random()*sounds.length);
-	mouth.setAttribute("src","sounds/"+sounds[random]);
-	//mouth.currentTime = 0;
-	mouth.play();
-	
-});*/
-	
-}else{
-	wand.addEventListener("mousedown",function(){
-		this.style.backgroundImage="url(images/wandDown.png)";
-	/*var random = Math.floor(Math.random()*sounds.length);
-	mouth.setAttribute("src","sounds/"+sounds[random]);
-	//mouth.currentTime = 0;
-	mouth.play();*/
-	
+
+wand.addEventListener("mousedown", () =>{
+		this.style.backgroundImage="url(images/wandDown.png)";	
 });
-}
+
 var pastRandom = 1;
-wand.addEventListener("mouseup",function(){
+wand.addEventListener("mouseup", () => {
 		this.style.backgroundImage="url(images/wand.png)";
 		var random = Math.floor(Math.random()*sounds.length);
 		if(pastRandom==random){
@@ -38,4 +20,4 @@ wand.addEventListener("mouseup",function(){
 		//mouth.currentTime = 0;
 		mouth.play();
 		pastRandom=random;
-	});
+});
