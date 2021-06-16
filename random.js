@@ -3,12 +3,12 @@ var wand = document.getElementById("wand");
 var mouth = document.getElementById("mouth");
 
 wand.addEventListener("mousedown", () =>{
-		this.style.backgroundImage="url(images/wandDown.png)";	
+	wand.style.backgroundImage="url(images/wandDown.png)";	
 });
 
 var pastRandom = 1;
 wand.addEventListener("mouseup", () => {
-		this.style.backgroundImage="url(images/wand.png)";
+		wand.style.backgroundImage="url(images/wand.png)";
 		var random = Math.floor(Math.random()*sounds.length);
 		if(pastRandom==random){
 			random++;
